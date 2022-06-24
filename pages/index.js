@@ -5,12 +5,14 @@ import DisplayData from "../components/DisplayData"
 export default function Home() {
 
   const [ipAddress, setIpAddress] = useState('');
-  const [response, setResponse] = useState(null)
+  const [response, setResponse] = useState(null);
+  const [error, setError] = useState(null)
 
   const handleSubmit = e => {
     e.preventDefault()
 
     const fetchInfo = async (ipAddress) => {
+      setError(null);
       console.log(ipAddress)
       try {
         const res = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.NEXT_PUBLIC_API_KEY}&ipAddress=${ipAddress}`);
@@ -19,7 +21,7 @@ export default function Home() {
         setResponse(data)
       } 
       catch (err) {
-        setResponse(err.message)
+        setError(err.message)
       }
   }
     fetchInfo(ipAddress);
@@ -31,7 +33,6 @@ export default function Home() {
 
   return (
     <div>
-      <DisplayData response={response}/>
       <form onSubmit={handleSubmit}>
         <label>
           <span>ip Address:</span>
@@ -43,6 +44,7 @@ export default function Home() {
         </label>
         <button>Find</button>
       </form>
+      <DisplayData response={response} error={error}/>
     </div>
   )
 }
