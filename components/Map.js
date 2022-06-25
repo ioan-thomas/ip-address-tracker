@@ -6,12 +6,12 @@ import "leaflet-defaulticon-compatibility";
 export default function Map({location}) {
   console.log('Im happening')
   return (
-  <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true} style={{height: '600px'}}>
+  <MapContainer center={location} zoom={13} scrollWheelZoom={true} style={{height: '600px'}}>
     <TileLayer
       attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
     />
-    <Marker position={[51.505, -0.09]}>
+    <Marker position={location}>
       <Popup>
         A pretty CSS3 popup. <br /> Easily customizable.
       </Popup>
