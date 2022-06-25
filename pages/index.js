@@ -1,12 +1,17 @@
 import { useState } from "react"
 import DisplayData from "../components/DisplayData"
+import dynamic from "next/dynamic";
 
+const MapWithNoSSR = dynamic(() => import("../components/Map"), {
+  ssr: false,
+});
 
 export default function Home() {
 
   const [ipAddress, setIpAddress] = useState('');
   const [response, setResponse] = useState(null);
-  const [error, setError] = useState(null)
+  const [error, setError] = useState(null);
+
 
   const handleSubmit = e => {
     e.preventDefault()
@@ -45,6 +50,7 @@ export default function Home() {
         <button>Find</button>
       </form>
       <DisplayData response={response} error={error}/>
+      <MapWithNoSSR/>
     </div>
   )
 }
