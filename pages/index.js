@@ -11,6 +11,7 @@ export default function Home() {
   const [ipAddress, setIpAddress] = useState('');
   const [response, setResponse] = useState(null);
   const [error, setError] = useState(null);
+  const [location, setLocation] = useState([51.505, -0.09])
 
 
   const handleSubmit = e => {
@@ -24,6 +25,8 @@ export default function Home() {
         console.log('fetching data')
         const data = await res.json();
         setResponse(data)
+        setLocation([data.location.lat, data.location.lng])
+        console.log(data)
       } 
       catch (err) {
         setError(err.message)
@@ -35,6 +38,7 @@ export default function Home() {
   const onChange = (e) => {
     setIpAddress(e.target.value)
   }
+
 
   return (
     <div>
@@ -50,7 +54,7 @@ export default function Home() {
         <button>Find</button>
       </form>
       <DisplayData response={response} error={error}/>
-      <MapWithNoSSR/>
+      <MapWithNoSSR location={location}/>
     </div>
   )
 }
