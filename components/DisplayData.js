@@ -2,10 +2,13 @@ import {DataContainer} from './styles/DisplayData.styled'
 
 export default function DisplayData({response, error}){
 
+
    return (
 
     <DataContainer>
+
         {response && 
+
         <div className='container'>
             <div className="border info">
                 <h6>IP ADDRESS</h6>
@@ -24,9 +27,11 @@ export default function DisplayData({response, error}){
                 <h6>ISP</h6>
                 <p>{response.isp}</p>
             </div>
-        </div>}
-        {error && <p className='error'>{error}</p>}
+        </div>
+        
+        }
 
+        {error && <p className='error'>{error}</p>}
         
      </DataContainer>
    )
