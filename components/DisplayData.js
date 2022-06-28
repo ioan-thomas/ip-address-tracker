@@ -2,6 +2,17 @@ import {DataContainer} from './styles/DisplayData.styled'
 
 export default function DisplayData({response, error}){
 
+    if (error){
+
+        return (
+            <DataContainer>
+                <div className="container">
+                    <p className='error'>Please enter a valid IP address (e.g. 8.8.8.8)</p>
+                </div>
+            </DataContainer>
+        )
+    }
+
 
    return (
 
@@ -29,9 +40,9 @@ export default function DisplayData({response, error}){
             </div>
         </div>
         
-        }
+    }
 
-        {error && <p className='error'>{error}</p>}
+        
         
      </DataContainer>
    )
