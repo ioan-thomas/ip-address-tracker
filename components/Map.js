@@ -10,7 +10,7 @@ import "leaflet/dist/leaflet.css";
 export default function Map({location}) {
 
   return (
-  <MapContainer center={location} zoom={13} scrollWheelZoom={true} style={{height: '600px'}}>
+  <MapContainer center={location} zoom={13} scrollWheelZoom={true} style={{height: 'calc(100vh - 300px)', width: '100vw', zIndex: 1}}>
     <TileLayer
       attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
