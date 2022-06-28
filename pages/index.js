@@ -23,6 +23,7 @@ export default function Home() {
   const handleClick = () => {
 
     const fetchInfo = async (ipAddress) => {
+      setResponse(null);
       setError(null);
       console.log(ipAddress)
       try {
