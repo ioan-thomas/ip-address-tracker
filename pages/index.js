@@ -1,6 +1,12 @@
 import { useState } from "react"
-import DisplayData from "../components/DisplayData"
+
 import dynamic from "next/dynamic";
+
+import DisplayData from "../components/DisplayData"
+
+// styles
+import { InputContainer, MainContainer } from "../components/styles/Containers.styled";
+import Image from "next/image";
 
 const MapWithNoSSR = dynamic(() => import("../components/Map"), {
   ssr: false,
@@ -14,8 +20,7 @@ export default function Home() {
   const [location, setLocation] = useState([51.505, -0.09])
 
 
-  const handleSubmit = e => {
-    e.preventDefault()
+  const handleClick = () => {
 
     const fetchInfo = async (ipAddress) => {
       setError(null);
@@ -41,20 +46,24 @@ export default function Home() {
 
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label>
-          <span>ip Address:</span>
+    <MainContainer>
+      <InputContainer>
+        <div>
+          <h3>IP Address Tracker</h3>
           <input 
-          type="text"
-          onChange={onChange}
-          value={ipAddress}
-          />
-        </label>
-        <button>Find</button>
-      </form>
+            type="text"
+            onChange={onChange}
+            value={ipAddress}
+            placeholder="Search for any IP address or domain"
+            />
+          <button onClick={handleClick}>
+            <Image src="/icon-arrow.svg" alt="" height='12' width='9'/>
+          </button>
+        </div>
+      </InputContainer>
+
       <DisplayData response={response} error={error}/>
       <MapWithNoSSR location={location}/>
-    </div>
+    </MainContainer>
   )
 }
