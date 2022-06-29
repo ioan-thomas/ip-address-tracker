@@ -28,6 +28,8 @@ export const DataContainer = styled.div`
         background-color: white;
         text-align: center;
         border-radius: 15px;
+        padding: 1rem;
+        margin: 0.5rem;
     }
     .info {
         padding: 24px 24px 0 24px;
