@@ -3,7 +3,6 @@ import {DataContainer} from './styles/DisplayData.styled'
 export default function DisplayData({response, error}){
 
     if (error){
-
         return (
             <DataContainer>
                 <div className="container">
@@ -19,7 +18,6 @@ export default function DisplayData({response, error}){
     <DataContainer>
 
         {response && 
-
         <div className='container'>
             <div className="border info">
                 <h6>IP ADDRESS</h6>
@@ -41,8 +39,6 @@ export default function DisplayData({response, error}){
         </div>
         
     }
-
-        
         
      </DataContainer>
    )
