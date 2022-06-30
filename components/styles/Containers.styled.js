@@ -46,6 +46,7 @@ export const InputContainer = styled.div`
         border-radius: 15px 0 0 15px;
         font-size: 18px;
         padding-left: 24px;
+        border-bottom: 3.5px solid black;
 
     }
 
