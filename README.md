@@ -1,3 +1,5 @@
+# IP Address Tracker - Using 2 External REST API's
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -29,8 +31,8 @@ I was given a Figma design file from [Frontend Mentor](https://www.frontendmento
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Code](https://github.com/ioan-thomas/ip-address-tracker)
+- Live Site URL: [Visit](https://ip-address-tracker-frgfvlq60-ioan-thomas.vercel.app/)
 
 
 ## My process
@@ -67,7 +69,7 @@ Setting-up styled-components requires more work than getting it to work with sta
 
 1. Install the `styled-components` package (NPM or Yarn).
 2. Install the `babel-plugin-styled-components` package which is required for server-side-rendering.
-3. Extend the <Document /> and inject the server-side-rendered styles into the <head>. Please use the [link](https://github.com/ioan-thomas/ip-address-tracker/blob/main/pages/_document.js) to see an example.
+3. Extend the `<Document />` and inject the server-side-rendered styles into the `<head>`. Please use the [link](https://github.com/ioan-thomas/ip-address-tracker/blob/main/pages/_document.js) to see an example.
 4. Create a file named .babelrc and add the [following](https://github.com/ioan-thomas/ip-address-tracker/blob/main/.babelrc).
 5. You're now up and running with Next.js and styled-components.
 
