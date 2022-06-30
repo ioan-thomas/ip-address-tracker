@@ -31,6 +31,7 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+          <link rel="shortcut icon" href="/favicon.svg" />
         </Head>
         <body>
           <Main />
