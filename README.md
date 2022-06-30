@@ -25,7 +25,7 @@ I was given a Figma design file from [Frontend Mentor](https://www.frontendmento
 
 ### Screenshot
 
-![What the project looks like.](screenshot.png)
+![What the project looks like.](/public/screenshot.png)
 
 ### Links
 
