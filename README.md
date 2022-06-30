@@ -1,4 +1,4 @@
-# IP Address Tracker - Using 2 External REST API's
+# IP Address Tracker - Using 2 API's
 
 ## Table of contents
 
