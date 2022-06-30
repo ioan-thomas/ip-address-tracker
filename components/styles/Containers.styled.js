@@ -14,7 +14,7 @@ export const InputContainer = styled.div`
     width: 100%;
     padding: 26px 24px 24px 24px;
     background-color: #494AA8;
-    background-image: url('Pattern-bg.png');
+    background-image: url('pattern-bg.png');
     background-size: cover;
     min-height: 300px;
 
@@ -46,6 +46,7 @@ export const InputContainer = styled.div`
         border-radius: 15px 0 0 15px;
         font-size: 18px;
         padding-left: 24px;
+        border-bottom: 3.5px solid black;
 
     }
 
