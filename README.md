@@ -29,8 +29,8 @@ I was given a Figma design file from [Frontend Mentor](https://www.frontendmento
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Code](https://github.com/ioan-thomas/ip-address-tracker)
+- Live Site URL: [Visit](https://ip-address-tracker-frgfvlq60-ioan-thomas.vercel.app/)
 
 
 ## My process
