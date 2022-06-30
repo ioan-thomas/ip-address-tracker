@@ -71,11 +71,12 @@ Setting-up styled-components requires more work than getting it to work with sta
 2. Install the `babel-plugin-styled-components` package which is required for server-side-rendering.
 3. Extend the `<Document />` and inject the server-side-rendered styles into the `<head>`. Please use the [link](https://github.com/ioan-thomas/ip-address-tracker/blob/main/pages/_document.js) to see an example.
 4. Create a file named .babelrc and add the [following](https://github.com/ioan-thomas/ip-address-tracker/blob/main/.babelrc).
-5. You're now up and running with Next.js and styled-components.
+
+You're now up and running with Next.js and styled-components.
 
 ###### Creating global styles with styled-components
 
-Creating global styles with styled-components is (as expected different that standard css global styles). I initally created a global style sheet and expected it to work. After a thrown error, I found out about styled-components' `createGlobalStyle` function. Here is a basic guide to create global styles with styled-components:
+Creating global styles with styled-components is (as expected) different that standard css global styles. I initally created a global stylesheet and expected it to work, but was then greeted with a console error. I then discovered styled-components' `createGlobalStyle` function. Here is a basic guide to create global styles with styled-components:
 
 1. Remove the default Next.js CSS style files and imports.
 2. Create a globalStyles file and use the `createGlobalStyle` function from styled-components.
@@ -86,7 +87,7 @@ You're now good to go! Check out the [Useful resources](#useful-resources) secti
 
 ###### Using external fonts with styled-components and Next.js
 
-Styled-components does not work in the traditional CSS way, and this behaviour continues when importing external fonts too. When working with Next.js, appending elements to the head of the page requires you to use Next.js's Head component.
+Styled-components does not work in the traditional CSS way, and this behaviour continues when importing external fonts. When working with Next.js, appending elements to the head of the page requires you to use Next.js' Head component.
 
   ```html 
     <Html>
