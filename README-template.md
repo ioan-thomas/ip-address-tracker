@@ -11,6 +11,7 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
     - [Dynamic Imports](#dynamic-imports)
+    - [Adding titles to pages with Next.js](#adding-titles-to-pages-with-nextjs)
     - [Styled-components and Next.js](#styled-components-and-nextjs)
     - [Creating global styles with styled-components](#creating-global-styles-with-styled-components)
     - [Using external fonts with styled-components and Next.js](#using-external-fonts-with-styled-components-and-nextjs)
@@ -59,6 +60,9 @@ Next.js dynamic import support, which allowed me to import the component (that u
     })
   ```
 
+###### Adding titles to pages with Next.js
+
+Whilst I used the Head component provided by Next.js in [_document.js](/pages/_document.js), to add a title to a webpage with Next.js, it is advised in their [documentation](https://nextjs.org/docs/messages/no-title-in-document-head) to define titles at the page-level using the `next/head` import.
 ###### Styled-components and Next.js
 
 Setting-up styled-components requires more work than getting it to work with standard CRA. The process is as follows: 
