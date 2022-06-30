@@ -69,7 +69,7 @@ Setting-up styled-components requires more work than getting it to work with sta
 
 1. Install the `styled-components` package (NPM or Yarn).
 2. Install the `babel-plugin-styled-components` package which is required for server-side-rendering.
-3. Extend the <Document /> and inject the server-side-rendered styles into the <head>. Please use the [link](https://github.com/ioan-thomas/ip-address-tracker/blob/main/pages/_document.js) to see an example.
+3. Extend the `<Document />` and inject the server-side-rendered styles into the `<head>`. Please use the [link](https://github.com/ioan-thomas/ip-address-tracker/blob/main/pages/_document.js) to see an example.
 4. Create a file named .babelrc and add the [following](https://github.com/ioan-thomas/ip-address-tracker/blob/main/.babelrc).
 5. You're now up and running with Next.js and styled-components.
 
