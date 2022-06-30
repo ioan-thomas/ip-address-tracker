@@ -14,7 +14,7 @@ export const InputContainer = styled.div`
     width: 100%;
     padding: 26px 24px 24px 24px;
     background-color: #494AA8;
-    background-image: url('Pattern-bg.png');
+    background-image: url('pattern-bg.png');
     background-size: cover;
     min-height: 300px;
 
