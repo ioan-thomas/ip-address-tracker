@@ -1,6 +1,7 @@
 import { useState } from "react"
 
 import dynamic from "next/dynamic";
+import Head from "next/head";
 
 import DisplayData from "../components/DisplayData"
 
@@ -47,24 +48,29 @@ export default function Home() {
 
 
   return (
-    <MainContainer>
-      <InputContainer>
-        <div>
-          <h3>IP Address Tracker</h3>
-          <input 
-            type="text"
-            onChange={onChange}
-            value={ipAddress}
-            placeholder="Search for any IP address or domain"
-            />
-          <button onClick={handleClick}>
-            <Image src="/icon-arrow.svg" alt="" height='12' width='9'/>
-          </button>
-        </div>
-      </InputContainer>
+    <>
+      <Head>
+        <title>IP Address Tracker</title>
+      </Head>
+      <MainContainer>
+        <InputContainer>
+          <div>
+            <h3>IP Address Tracker</h3>
+            <input 
+              type="text"
+              onChange={onChange}
+              value={ipAddress}
+              placeholder="Search for any IP address or domain"
+              />
+            <button onClick={handleClick}>
+              <Image src="/icon-arrow.svg" alt="" height='12' width='9'/>
+            </button>
+          </div>
+        </InputContainer>
 
-      <DisplayData response={response} error={error}/>
-      <MapWithNoSSR location={location}/>
-    </MainContainer>
+        <DisplayData response={response} error={error}/>
+        <MapWithNoSSR location={location}/>
+      </MainContainer>
+    </>
   )
 }
