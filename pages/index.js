@@ -29,6 +29,7 @@ export default function Home() {
       console.log(ipAddress)
       try {
         const res = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.NEXT_PUBLIC_API_KEY}&ipAddress=${ipAddress}`);
+        console.log(process.env.NEXT_PUBLIC_API_KEY)
         console.log('fetching data')
         const data = await res.json();
         setResponse(data)
