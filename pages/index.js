@@ -33,7 +33,6 @@ export default function Home() {
         const data = await res.json();
         setResponse(data)
         setLocation([data.location.lat, data.location.lng])
-        console.log(data)
       } 
       catch (err) {
         setError(err.message)
