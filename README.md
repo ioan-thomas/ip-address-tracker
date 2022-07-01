@@ -50,6 +50,10 @@ I was given a Figma design file from [Frontend Mentor](https://www.frontendmento
 
 ### What I learned
 
+###### Environmental variables
+
+A ***fundamental*** concept I learned whilst deploying this project was that local environmental variables in `.env.local` files to not work in production. I explored alternatives such as hosting a node server however, it was out of the scope of the project... Instead, I found that Vercel offers the ability to host environmental variables on the platform, that are accessible to the browser.
+
 ###### Dynamic imports
 
 Next.js dynamic import support, which allowed me to import the component (that uses the react-leaflet package) with no SSR. The below function tells the component to only render after the Next.js server-side render has happened. See the code below:
