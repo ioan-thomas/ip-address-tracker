@@ -3,6 +3,7 @@ import {DataContainer} from './styles/DisplayData.styled'
 export default function DisplayData({response, error}){
 
     if (error){
+        console.log(error);
         return (
             <DataContainer>
                 <div className="container">
