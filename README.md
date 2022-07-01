@@ -1,4 +1,4 @@
-# IP Address Tracker - Using 2 External REST API's
+# IP Address Tracker - Using 2 API's
 
 ## Table of contents
 
@@ -32,7 +32,7 @@ I was given a Figma design file from [Frontend Mentor](https://www.frontendmento
 ### Links
 
 - Solution URL: [Code](https://github.com/ioan-thomas/ip-address-tracker)
-- Live Site URL: [Visit](https://ip-address-tracker-frgfvlq60-ioan-thomas.vercel.app/)
+- Live Site URL: [Visit](https://ip-address-tracker-bu84g1ns6-ioan-thomas.vercel.app/)
 
 
 ## My process
