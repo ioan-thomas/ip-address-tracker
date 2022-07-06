@@ -32,7 +32,7 @@ I was given a Figma design file from [Frontend Mentor](https://www.frontendmento
 ### Links
 
 - Solution URL: [Code](https://github.com/ioan-thomas/ip-address-tracker)
-- Live Site URL: [Visit](https://ip-address-tracker-bu84g1ns6-ioan-thomas.vercel.app/)
+- Live Site URL: [Visit](http://ip-address-tracker-drab-gamma.vercel.app/)
 
 
 ## My process
