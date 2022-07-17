@@ -21,7 +21,7 @@
 
 ## Overview
 
-This project is an IP Address Tracker app. Type in an IP address and see its location on the world map. I used two diffent [API's](#built-with). This project was mynthe first time using a some of the technologies, e.g. styled-components, Next.js. This project also allowed me to continue learning React, JavaScript and working with API's, as well as improving on other skills such as HTML and CSS.
+This project is an IP Address Tracker app. Type in an IP address and see its location on the world map. I used two diffent [API's](#built-with). This project was my first time using a some of the technologies, e.g. styled-components, Next.js. This project also allowed me to continue learning React, JavaScript and working with API's, as well as improving on other skills such as HTML and CSS.
 
 I was given a Figma design file from [Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0) and had to replicate the design as close as possible. Please note that the design only included designs for two widths, 375px and 1440px. I therefore, only developed the app to those design widths but did add responsiveness where possible. Please see the [Returning to this project](#returning-to-this-project) section for how I will update this project in the future.
 
