@@ -126,7 +126,7 @@ Given this was my first time using CSS in a project that was made entirely from 
 
 I may also use a library such as MaterialUI that provides pre-made components that implements Google's Material Design. This would not only allow me to ship faster projects, but also allow for a better UI/UX - I can then focus on more important learning topics. 
 
-##### Using different data-fetching methods
+###### Using different data-fetching methods
 
 Next.js offers a host of ways to render content (aside from the React Client-side Rendering that I used in this project) such as, pre-rendering with SSR or Static Generation, or updating contnent at runtime with Incremental Static Regeneration. 
 
